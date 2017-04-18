@@ -1,0 +1,67 @@
+<head>
+  <title>1-wall</title>
+</head>
+
+<body>
+  <div class="container">
+  {{> wall}}
+</div>
+</body>
+
+<template name="wall">
+
+  <h1>{{title}}</h1>
+  
+  <div>
+  Select Color:   
+    <button class='s1 btn' style="background-color:#000000"></button>
+    <button class='s1 btn' style="background-color:#FF0000"></button>
+    <button class='s1 btn' style="background-color:#CE5682"></button>
+    <button class='s1 btn' style="background-color:#F70BA1"></button>
+    <button class='s1 btn' style="background-color:#B10BF7"></button>
+    <button class='s1 btn' style="background-color:#620BF7"></button>
+    <button class='s1 btn' style="background-color:#0B6AF7"></button>
+    <button class='s1 btn' style="background-color:#0BB8F7"></button>
+    <button class='s1 btn' style="background-color:#0BF7F0"></button>
+    <button class='s1 btn' style="background-color:#0BF7A9"></button>
+    <button class='s1 btn' style="background-color:#0B7742"></button>
+    <button class='s1 btn' style="background-color:#F0F70B"></button>
+    <button class='s1 btn' style="background-color:#CCD2A5"></button>
+    <button class='s1 btn' style="background-color:#F7B10B"></button>
+    <button class='s1 btn' style="background-color:#F7620B"></button>
+    <button class='s1 btn' style="background-color:#FF3366"></button>
+  </div>
+  <div>
+  Tickness Size: 
+  <button class='btn2'>1</button>
+  <button class='btn2'>3</button>
+  <button class='btn2'>5</button>
+  <button class='btn2'>7</button>
+  <button class='btn2'>9</button>
+  <button class='btn2'>11</button>
+  <button class='btn2'>13</button>
+  <button class='btn2'>15</button>
+  <button class='btn2'>17</button>
+  <button class='btn2'>19</button>
+  <!-- {{thickness}} -->
+  
+  </div>
+ 
+
+
+  <!-- <br>
+  <div id="slider1"></div>
+  <br>
+  Tickness = {{sliderVal1}} -->
+<!-- <h2>Canvas</h2> -->
+<button class='clear'>Clear Canvas</button>
+{{> canvas}}
+
+
+<!-- {{> colorPicker}} -->
+</template>
+
+<template name="canvas">
+  <div id='canvas'></div>
+</template>
+
