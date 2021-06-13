@@ -1,7 +1,14 @@
+import { Template } from 'meteor/templating';
+// import { ReactiveVar } from 'meteor/reactive-var';
+
+import './main.html';
+import './drawing.js';
+import './color.js';
+
 points = new Meteor.Collection('pointsCollection');
 var canvas;
 
-// we use these for drawing more interesting shapes
+// Use these for drawing more interesting shapes
 var lastX=0;
 var lastY=0;
 var strokeWidth = 1;
@@ -12,6 +19,7 @@ var setColor1 = "black";
 Meteor.startup( function() {
   
   // color = new ColorPicker();
+  console.log("11111111")
   canvas = new Canvas();
 
   Deps.autorun( function() {
@@ -40,9 +48,6 @@ Template.wall.events({
   // "changeColor .input-group": function(event) {
   //   console.log("hiiiiiii");
   //   strokeColor = $('#cp3').colorpicker('getValue');
-
-
-
   // },
 
   "click button.clear": function (event) {
@@ -73,10 +78,6 @@ var markPoint = function() {
       // y: (event.pageY - offset.top)});
 
 
-        //We can do more interesting stuff
-        //We need to input data in the right format
-        //Then we can send this to d3 for drawing
-
 
         //1) Algorithmic mouse follower
       // x: (event.pageX - offset.left)+(Math.cos((event.pageX/10  ))*30),
@@ -87,13 +88,13 @@ var markPoint = function() {
         y: (event.pageY - offset.top),
         x1: lastX,
         y1: lastY,
-        // We could calculate the line thickness from the distance
+        // I could calculate the line thickness from the distance
         // between current position and last position
         // w: 0.05*(Math.sqrt(((event.pageX - offset.left)-lastX) * (event.pageX - offset.left)
         //  + ((event.pageY - offset.top)-lastY) * (event.pageY - offset.top))),
-        // Or we could just set the line thickness using buttons and variable
+        // Or I could just set the line thickness using buttons and variable
         w: thickness,
-        // We can also use strokeColor, defined by a selection
+        // I can also use strokeColor, defined by a selection
         // c: strokeColor,
         c: setColor1,
 
@@ -132,9 +133,6 @@ $(document).ready(function(){
       thickness = $(this).text();
       console.log(thickness);
       $(".btn2").css("background-color", setColor1);
-
-    // hexc(x);
-    // alert(color);
 });
 });
 

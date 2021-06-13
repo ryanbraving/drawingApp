@@ -1,0 +1,39 @@
+.btn {
+  /*background-color: #4CAF50;*/ /* Green */
+  /*border: 2px solid #000000;*/ /* Green */
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+#canvas{
+  margin-top:15px;	
+}
+
+.btn2 {
+  background-color: #000000; /* Green */
+  /*border: 2px solid #000000;*/ /* Green */
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  margin-bottom:30px;
+
+}
+
+.clear{
+padding: 10px 10px;
+}  
