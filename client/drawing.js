@@ -1,4 +1,4 @@
-import './main.html';
+import d3 from './d3.min.js';
 
 Canvas = function () {
   console.log(2222222)
