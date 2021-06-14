@@ -1,7 +1,6 @@
 import d3 from './d3.min.js';
 
 Canvas = function () {
-  console.log(2222222)
   var self = this;
   var svg;
 

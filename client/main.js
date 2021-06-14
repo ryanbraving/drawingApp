@@ -19,7 +19,6 @@ var setColor1 = "black";
 Meteor.startup( function() {
   
   // color = new ColorPicker();
-  console.log("11111111")
   canvas = new Canvas();
 
   Deps.autorun( function() {
